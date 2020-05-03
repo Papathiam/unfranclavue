@@ -1,0 +1,55 @@
+
+.ion-item-input {
+  --background: transparence;
+  border: .9px solid rgba(142, 142, 142, 0.84);
+  border-radius: 25px;
+  height: 40px;
+  margin: 10px 0px;
+}
+
+
+.transform {
+  transform: rotate(260deg);
+}
+
+.back-login {
+  position: relative;
+  height: 70px;
+  width: 100%;
+}
+
+.back-login:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 0% 0% 50% 140%;
+  width: 237px;
+  height: 106px;
+  background-color: #31887b;
+  right: -5px;
+  z-index: 1;
+}
+
+.back-login:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 10% 50% 10px 46px;
+  width: 293px;
+  height: 81px;
+  background-color: #ff8b26;
+  left: 98px;
+  top: -27px;
+  transform: rotate(-9deg);
+}
+
+.back-login-bottom {
+  position: absolute;
+  background: #ff8b26;
+  bottom: -30px;
+  height: 108px;
+  width: 89px;
+  left: 0px;
+  border-radius: 50% 50% 0% 0%;
+  transform: rotate(45deg);
+}
