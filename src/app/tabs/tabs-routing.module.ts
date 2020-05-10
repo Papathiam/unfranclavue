@@ -14,21 +14,14 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children: [
-      {
-        path: 'schedule',
-        children: [
-          {
-            path: '',
-            loadChildren: '../schedule/schedule.module#ScheduleModule'
-          }
-        ]
-      },
-      {
-        path: '',
-        redirectTo: '/app/tabs/schedule',
-        pathMatch: 'full'
-      }
+      //{path: 'tabs', loadChildren: () => import('../tabs/tabs.module').then( m => m.TabsPageModule)},
+      {path: 'profil', loadChildren: () => import('../profil/profil.module').then( m => m.ProfilPageModule)},
     ]
+  },
+  {
+    path: '',
+    redirectTo: './home/home',
+    pathMatch: 'full'
   }
 ];
 
