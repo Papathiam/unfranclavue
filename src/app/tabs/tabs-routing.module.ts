@@ -19,10 +19,10 @@ const routes: Routes = [
     ]
   },
   {
-    path: '',
-    redirectTo: './home/home',
-    pathMatch: 'full'
-  }
+   path: '',
+   redirectTo: 'tabs',
+   pathMatch: 'full'
+ },
 ];
 
 @NgModule({
