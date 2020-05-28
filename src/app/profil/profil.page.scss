@@ -1,24 +1,3 @@
+.ion-item {
 
-.img-profile-container
-{
-  //display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  .img-profile
-  {
-    border-radius:50%;
-    width: 140px !important;
-    height: 140px !important;
-    margin-top: 10px;
-    margin-bottom: 10px!important;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    -ms-border-radius:50%;
-    -o-border-radius:50%;
-    box-shadow: 9px 9px 22px -9px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 9px 9px 22px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 9px 22px -9px rgba(0,0,0,0.75);
-    object-fit: cover;
-  }
 }
