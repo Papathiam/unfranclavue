@@ -1,12 +1,15 @@
-<!--<ion-header>
+<ion-header>
   <ion-toolbar>
-    <ion-title>profil</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Mon profil</ion-title>
   </ion-toolbar>
-</ion-header>-->
+</ion-header>
 
 <ion-content class="ion-padding-top">
 
-  <ion-row class="ion-padding ion-justify-content-center">
+  <ion-row class="ion-justify-content-center">
     <!--<ion-col size="12">
       <ion-list style="background-color: #fff;" lines="none">
         <div class="ion-text-center">
@@ -18,8 +21,8 @@
     </ion-col>-->
 
     <ion-col size="12" class="ion-margin-bottom">
-      <ion-card class="ion-no-margin">
-        <div style="font-size: 22px; font-weight: 500;margin: 16px 0px 0px 16px;">Lundi</div>
+      <div class="ion-no-margin">
+        <!--<div style="font-size: 22px; font-weight: 500;margin: 16px 0px 0px 16px;">Lundi</div>-->
         <ion-item class="ion-item">
           <ion-avatar slot="start">
             <img src="../../assets/images/argent.jpeg">
@@ -27,7 +30,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -41,7 +44,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -55,7 +58,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -69,7 +72,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -83,21 +86,30 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
             <div> <ion-icon style="margin-top: 5px;font-size: 10px" name="eye-outline" color="1f-green"></ion-icon> 35</div>
           </ion-text>
         </ion-item>
-        <div>
-          <ion-text slot="start" style="font-size: 12px;font-style: italic">Etat_payement</ion-text>
-          <ion-badge slot="end" color="1f-green">120</ion-badge>
+        <div style="margin-top: 20px">
+          <ion-card style="padding: 4px 10px;">
+            <ion-row>
+              <ion-col size="6" class="ion-align-self-center">
+                <ion-text style="font-size: 12px;font-style: italic;margin-left: 8px">Payee</ion-text>
+              </ion-col>
+              <ion-col size="6" class="ion-text-right">
+                <div style="font-size: 14px;;font-weight: 500"> <ion-icon style="font-size: 12px" name="eye-outline" color="1f-green"></ion-icon> 135</div>
+                <div style="font-size: 15px;font-weight: 600;margin-top: 10px">2300 FCFA</div>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
-      </ion-card>
+      </div>
     </ion-col>
 
-    <ion-col size="12" class="ion-margin-bottom">
+   <!-- <ion-col size="12" class="ion-margin-bottom">
       <ion-card class="ion-no-margin">
         <ion-item class="ion-item">
           <ion-avatar slot="start">
@@ -106,7 +118,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -120,7 +132,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -134,7 +146,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -148,7 +160,7 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
@@ -162,14 +174,27 @@
           <ion-label>
             <h3 style="font-weight: 600;;font-size: 15px">Image_nom</h3>
             <div style="margin: 3px 0px 6px;font-size: 13px">#image_id</div>
-            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon> : 12-02:20h / 12-05:19h</div>
+            <div style="font-size: 13px"><ion-icon name="calendar-outline" color="1f-green"></ion-icon>  12 Mars 20h:30 - 13 Mars 19h:55</div>
           </ion-label>
           <ion-text slot="end" style="font-size: 12px;font-style: italic">
             <div>Etat</div>
             <div> <ion-icon style="margin-top: 5px;font-size: 10px" name="eye-outline" color="1f-green"></ion-icon> 35</div>
           </ion-text>
         </ion-item>
+        <div style="padding: 4px 10px">
+          <ion-row>
+            <ion-col size="6">
+              <ion-text style="font-size: 12px;font-style: italic;margin-left: 8px">Non payee</ion-text>
+            </ion-col>
+            <ion-col size="6" class="ion-text-right">
+              <div style="font-size: 14px;;font-weight: 500"> <ion-icon style="font-size: 12px" name="eye-outline" color="1f-green"></ion-icon> 35</div>
+            </ion-col>
+            <ion-col size="12" class="ion-text-right">
+              <div style="font-size: 15px;margin-right: 8px;font-weight: 600">2300 FCFA</div>
+            </ion-col>
+          </ion-row>
+        </div>
       </ion-card>
-    </ion-col>
+    </ion-col>-->
   </ion-row>
 </ion-content>

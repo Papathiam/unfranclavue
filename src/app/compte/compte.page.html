@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Compte</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back-login">
+
+  <div style="margin-top: 106px">
+    <ion-list>
+      <ion-item>
+        <!--<ion-label position="floating">Telephone</ion-label>-->
+        <ion-input type="text" placeholder="Username ...">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Secteur d'activite</ion-label>
+        <ion-select value="Macon" okText="Valider" cancelText="Annuler">
+          <ion-select-option value="Orange">Orange</ion-select-option>
+          <ion-select-option value="Macon">Macon</ion-select-option>
+          <ion-select-option value="Menuisier">Menuisier</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <div class="ion-padding-horizontal" style="margin-top : 40px">
+        <ion-chip color="1f-green">
+          <ion-label>Macon</ion-label>
+          <ion-icon color="1f-orange" name="close-circle"></ion-icon>
+        </ion-chip>
+        <ion-chip color="1f-green">
+          <ion-label>Menuisier</ion-label>
+          <ion-icon color="1f-orange" name="close-circle"></ion-icon>
+        </ion-chip>
+        <ion-chip color="1f-green">
+          <ion-label>Orange</ion-label>
+          <ion-icon color="1f-orange" name="close-circle"></ion-icon>
+        </ion-chip>
+        <ion-chip color="1f-green">
+          <ion-label>Primary</ion-label>
+          <ion-icon color="1f-orange" name="close-circle"></ion-icon>
+        </ion-chip>
+        <ion-chip color="1f-green">
+          <ion-label>Secondary</ion-label>
+          <ion-icon color="1f-orange" name="close-circle"></ion-icon>
+        </ion-chip>
+        <ion-chip color="1f-green">
+          <ion-label>Dark</ion-label>
+          <ion-icon color="1f-orange" name="close-circle"></ion-icon>
+        </ion-chip>
+      </div>
+
+
+    </ion-list>
+  </div>
+</ion-content>
+<div class="ion-text-end ion-padding-horizontal" style="position: absolute;bottom: 20px;right: 0px">
+  <ion-button shape="round" fill="outline" color="1f-green" (click)="goV()">
+    Terminer &nbsp;
+    <ion-icon name="arrow-forward-outline" color="1f-orange"></ion-icon>
+  </ion-button>
+</div>

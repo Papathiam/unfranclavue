@@ -17,6 +17,8 @@ const routes: Routes = [
       {path: 'home', loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)},
       {path: 'profil', loadChildren: () => import('../profil/profil.module').then( m => m.ProfilPageModule)},
       {path: 'search', loadChildren: () => import('../search/search.module').then( m => m.SearchPageModule)},
+      {path: 'historique', loadChildren: () => import('../historique/historique.module').then( m => m.HistoriquePageModule)},
+      {path: 'compte', loadChildren: () => import('../compte/compte.module').then( m => m.ComptePageModule)},
     ]
   },
   {

@@ -10,6 +10,19 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
+
+  public appPagesMenu = [
+    {
+      title: 'Historique',
+      url: 'tabs/historique',
+    },
+    {
+      title: 'Avancées',
+      url: 'tabs/compte',
+    },
+  ];
+
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
